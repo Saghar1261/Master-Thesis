@@ -71,3 +71,25 @@ Install dependencies:
 ```
 pip install -r requirements.txt
 ```
+## 🚀 Running the Models  
+
+Once you have installed the dependencies, you can run the models using the provided scripts.
+
+### 🏹 YOLOv8 Inference  
+Run YOLOv8 on a sample image:  
+```bash
+python scripts/inference_yolo.py --image_path data/sample.jpg
+```
+## 📊 Results and Key Findings  
+
+✅ **YOLOv8** showed **best performance** for small insect detection.  
+✅ **Faster R-CNN** provided a good balance between precision and computational efficiency.  
+✅ **Environmental factors (blurriness, occlusions, noisy backgrounds)** significantly impact accuracy.  
+
+### 🔍 Model Performance Comparison  
+
+| Model        | mAP@50:95 | F1 Score | Strengths                        |
+|-------------|----------|---------|--------------------------------|
+| **YOLOv8**  | 0.93177  | 0.994   | Best for small insect detection |
+| **Faster R-CNN** | 0.873  | 0.989   | Balanced precision & speed      |
+| **RetinaNet**    | Lower   | Lower   | Struggles with small objects    |
