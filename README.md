@@ -40,6 +40,7 @@ These models were tested for **insect detection and classification** across six 
 Master-Thesis/ 
 
 │── data/ # Sample insect images and annotations
+
 │── models/ # Pre-trained models and saved weights
 
 │── scripts/ # Training, inference, and evaluation scripts
@@ -57,3 +58,11 @@ Master-Thesis/
 │── .gitignore # Ignore unnecessary files
 
 │── LICENSE # Open-source license
+
+
+## 🚀 Getting Started  
+### **1️⃣ Installation**  
+Clone the repository:  
+```bash
+git clone https://github.com/Saghar1261/Master-Thesis.git
+cd Master-Thesis
