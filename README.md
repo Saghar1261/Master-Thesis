@@ -1,52 +1,38 @@
+# Insect Detection and Classification Using Convolutional Neural Networks  
 
+This repository contains the code, models, and resources for the master's thesis project:  
 
-# Insect Detection and Classification Using Convolutional Neural Networks
+**"A Comparison of Convolutional Neural Network Architectures for Insect Detection of Different Sizes"**  
 
-This repository contains the code, models, and resources for the master’s thesis project **"A Comparison of Convolutional Neural Network Architectures for Insect Detection of Different Sizes"**, completed as part of the Applied Data Science M.Sc. program at Carinthia University of Applied Sciences.
+📌 **Author**: Saghar Ghaffari, B.Sc.  
+📌 **Degree**: Master of Science (M.Sc.), Applied Data Science  
+📌 **Institution**: Carinthia University of Applied Sciences  
+📌 **Supervisors**:  
+- FH-PROF. DR.-ING. Karl-Heinrich Anders  
+- FH-PROF. DIPL.-ING. DR. TECHN. Adrijana Car  
 
-## Project Overview
+## 📌 Project Overview  
+This study evaluates and compares the performance of three Convolutional Neural Network (CNN) models:  
+- **YOLOv8**  
+- **Faster R-CNN**  
+- **RetinaNet**  
 
-This study evaluates several Convolutional Neural Network (CNN) models, including YOLOv8, Faster R-CNN, and RetinaNet, to detect and classify insects in high-resolution images. The models were tested for general insect detection and for classification across six insect species, with a specific focus on handling small, occluded, or noisy insect images in natural habitats. This project aims to advance automated methods for ecological monitoring and pest management by exploring model performance in challenging environments.
+These models were tested for **insect detection and classification** across six species using high-resolution images. The goal is to improve **ecological monitoring** and **pest management** by identifying the most effective CNN architecture for challenging real-world conditions (e.g., small insects, occlusions, and noisy environments).  
 
-## Research Goals
+## 🎯 Research Goals  
+✔️ Compare **precision, F1 score, and mAP** across different CNN models.  
+✔️ Analyze robustness against **environmental challenges** (e.g., occlusions, background noise, varying insect sizes).  
+✔️ Assess **computational efficiency** for real-time monitoring applications.  
 
-The primary objectives of this research include:
-- Comparing the precision, F1 score, and mAP of various CNN models for insect detection.
-- Investigating model robustness against environmental challenges, such as image noise, occlusion, and varying insect scales.
-- Assessing the computational efficiency of models for practical applications in real-time monitoring.
+## 🛠️ Methodology  
+1. **Data Acquisition**  
+   - High-resolution images collected via **Ricoh WG-70** digital cameras.  
+   - Camera traps deployed in **Carinthia, Austria** (various natural habitats).  
 
-## Methodology
+2. **Model Selection**  
+   - **YOLOv8**, **Faster R-CNN**, and **RetinaNet** trained on a dataset of **1,300+ labeled images**.  
 
-1. **Data Acquisition**: Images were collected from camera traps set up in Carinthia, Austria, using high-resolution Ricoh WG-70 digital cameras. The dataset includes diverse insect species captured under varying environmental conditions.
-2. **CNN Architectures**: YOLOv8, Faster R-CNN, and RetinaNet were chosen based on their success in object detection tasks. Each model was trained and evaluated on a labeled insect dataset containing over 1,300 images.
-3. **Evaluation Metrics**: Model performance was measured through precision, recall, F1 score, and mean Average Precision (mAP), focusing on both general insect detection and classification at the species level.
+3. **Evaluation Metrics**  
+   - **Precision, Recall, F1-score, and Mean Average Precision (mAP)** assessed at both **insect-level and species-level detection**.  
 
-## Repository Structure
-
-- **data/**: Contains sample insect images and annotations.
-- **models/**: Includes pre-trained models and saved weights.
-- **scripts/**: Training, inference, and evaluation scripts for YOLOv8, Faster R-CNN, and RetinaNet models.
-- **notebooks/**: Jupyter notebooks used for data analysis and visualization of results.
-- **docs/**: Additional project documentation and figures.
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3.11+
-- Libraries: PyTorch 2.0.0+cu117, TensorFlow, Detectron2, OpenCV, matplotlib, sklearn
-
-### Results and Analysis
-
-Results are logged in the `results/` directory, with model performance summarized in terms of precision, recall, F1 score, and mAP.
-
-## Key Findings
-
-- YOLOv8 demonstrated superior performance, particularly in small object detection (mAP@50:95 of 0.93177 and F1 score of 0.994).
-- Faster R-CNN showed balanced precision and efficiency, ideal for settings where processing speed is critical.
-- Environmental challenges, such as image blurriness and occlusions, significantly affected model accuracy.
-
-## Future Work
-
-Future research may involve optimizing model performance for underrepresented insect species and exploring computational cost reductions to facilitate real-time applications.
-
+## 📂 Repository Structure  
