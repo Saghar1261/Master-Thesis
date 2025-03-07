@@ -37,8 +37,9 @@ These models were tested for **insect detection and classification** across six 
 
 ## 📂 Repository Structure  
 
-Master-Thesis/ │── data/ # Sample insect images and annotations
+Master-Thesis/ 
 
+│── data/ # Sample insect images and annotations
 │── models/ # Pre-trained models and saved weights
 
 │── scripts/ # Training, inference, and evaluation scripts
