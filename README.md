@@ -36,3 +36,14 @@ These models were tested for **insect detection and classification** across six 
    - **Precision, Recall, F1-score, and Mean Average Precision (mAP)** assessed at both **insect-level and species-level detection**.  
 
 ## 📂 Repository Structure  
+
+Master-Thesis/ │── data/ # Sample insect images and annotations
+│── models/ # Pre-trained models and saved weights
+│── scripts/ # Training, inference, and evaluation scripts
+│── notebooks/ # Jupyter notebooks for analysis & visualization
+│── results/ # Performance metrics & final model outputs
+│── docs/ # Additional documentation and figures
+│── thesis.pdf # Full Master Thesis document
+│── README.md # Project documentation
+│── .gitignore # Ignore unnecessary files
+│── LICENSE # Open-source license
