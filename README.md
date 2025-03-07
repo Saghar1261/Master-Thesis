@@ -66,7 +66,8 @@ Clone the repository:
 ```bash
 git clone https://github.com/Saghar1261/Master-Thesis.git
 cd Master-Thesis
-
+```
 Install dependencies:
-
+```
 pip install -r requirements.txt
+```
